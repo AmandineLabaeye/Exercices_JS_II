@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Essai DHTML</title>
+<style>
+	p{text-align: center}
+	
+	#zone{color: red}
+</style>
+<script>
+
+	function essai()
+		{
+			alert(document.styleSheets[0].cssRules[0].selectorText);
+			
+		}
+		
+	function supprime()
+		{
+			
+		}
+		
+	function ajoute()
+		{
+		
+			
+		}
+</script>
+
+</head>
+<body>
+
+<p>Essai de <span id="zone">texte</span></p>
+
+<input type="button" value="Supprimer une règle" onclick="supprime()">
+<input type="button" value="Ajouter une règle" onclick="ajoute()">
+
+</body>
+</html>
