@@ -9,14 +9,21 @@
 	function ajout()
 		{
 
-			
-		
+			var NewListe = document.createElement('li');
+			var Text = document.createTextNode('Eau');
+			NewListe.appendChild(Text);
+            document.getElementById('listecommissions').appendChild(NewListe);
+
 		}
 	
 </script>
 
 </head>
 <body onclick="ajout()">
+
+<input id="recherche" type="text">
+
+<button id="bouton1">Valider</button>
 
 <ul id="listecommissions">
 	<li>1kg de farine</li>

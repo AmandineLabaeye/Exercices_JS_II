@@ -3,8 +3,19 @@
 <head>
 <meta charset="UTF-8" >
 <title>Ajouts d'éléments</title>
+
+<script>
+
+	function Bouton() {
+		var i = document.getElementById('dernier');
+		var parent = document.body;
+		parent.removeChild(i);
+	}
+
+</script>
+
 <style>
-   h1  {text-align: "center"}
+   h1  {text-align: center;}
 		
 	img.exemple{
 			display: block;
@@ -18,12 +29,13 @@
 
 <div id="exercice">
 
+	<button id="Bouton" onclick="Bouton();"></button>
 
 <ol>
 	<li>Télécharger le fichier <a href="exo9vide.html">exo9vide.html</a>.</li>
 	<li>Sélectionner la liste d'identifiant "listecommissions".</li>
 	<li>Créer un nouvel item de liste et lui affecter un texte.</li>
-	<li>Ajouter ce nouvel élément de liste à la liste</li>
+	<li id="dernier">Ajouter ce nouvel élément de liste à la liste</li>
 </ol>
 
 <p>Modifier le code en ajoutant un champ de saisie de texte et un bouton de validation. Le texte ajouté à la liste devra être saisi dans le champ de... saisie.</p>
